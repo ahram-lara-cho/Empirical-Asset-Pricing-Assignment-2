@@ -1,0 +1,62 @@
+# ==============================
+# Raw / processed / WRDS-derived data
+# ==============================
+
+# Do not commit raw external data
+data/raw/*
+!data/raw/.gitkeep
+
+# Do not commit generated WRDS-derived panels
+data/processed/*.parquet
+
+# Keep small metadata files for transparency
+!data/processed/.gitkeep
+!data/processed/char_cols.csv
+!data/processed/macro_cols.csv
+!data/processed/interaction_cols.csv
+
+# Optional local benchmark fallback; may be WRDS-derived
+data/benchmark.csv
+
+
+# ==============================
+# Model predictions / checkpoints
+# ==============================
+
+# Large generated prediction files
+outputs/predictions*.parquet
+outputs/predictions_all*.parquet
+
+# ML checkpoints and logs
+outputs/_ckpt_ml/
+outputs/run_logs/
+
+# Keep outputs folder placeholder
+!outputs/.gitkeep
+
+
+# ==============================
+# Python / environment
+# ==============================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+.env
+
+.ipynb_checkpoints/
+
+
+# ==============================
+# OS / editor
+# ==============================
+
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
