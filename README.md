@@ -1,4 +1,3 @@
-````markdown
 # Empirical Asset Pricing Assignment 2
 
 This repository contains the code for an empirical asset pricing replication based on Gu, Kelly, and Xiu (2020), *Empirical Asset Pricing via Machine Learning*. The project builds a stock-level monthly prediction panel, trains several linear and machine-learning models, and produces the required Table 1, Figure 4, and Figure 9 outputs.
